@@ -5,7 +5,7 @@ import "./../styles/App.css";
 function App() {
   const[state, setState] = useState(false);
   const renderPara = () =>{
-    setState(!state);
+    setState(true);
   }
   return (
     <div id="main">
