@@ -3,14 +3,14 @@ import "./../styles/App.css";
 
 
 function App() {
-  const[state, setState] = useState();
+  const[state, setState] = useState(false);
   const renderPara = () =>{
-    setState(`Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy`);
+    setState(!state);
   }
   return (
     <div id="main">
       <button onClick = {renderPara} id = "click" >Render</button>
-      <p id = 'para'>{state}</p>
+      <p id = 'para'>{state? "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy": ""}</p>
     </div>
   );
 }
