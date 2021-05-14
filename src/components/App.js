@@ -10,7 +10,7 @@ function App() {
   return (
     <div id="main">
       <button onClick = {renderPara} id = "click" >Render</button>
-      <p id = 'para'>{state? "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy": ""}</p>
+      {state ? <p id = 'para'>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : null}
     </div>
   );
 }
